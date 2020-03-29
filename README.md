@@ -14,5 +14,9 @@ airodump-ng [interface-name] : Sniffs all the wireless network around with their
 
 ```
 airodump-ng --band [a,b,g,n] [interface-name] : capture packet in band specified
+
+airodump-ng --bssid [bssid] --channel [channel number]
+
+aireplay-ng --deauth  100000 -a [access mac] -c [client mac] [interface-name]
 ```
 
