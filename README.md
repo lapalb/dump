@@ -53,3 +53,12 @@ WPS: Can be exploited. It was designed to simplify connecting to wireless. Only 
 wash --interface [interface-name] : Shows all the wifi with wps enabled
 reaver --bssid [bssid] --channel [channel number] --interface [interface-name] -vvv --no-associate : Bruteforce 8 bit WPS pin which is then used to compute WPA Passkey
 ```
+
+#### Wordlist Attack
+```
+MIC of handshake + word list 
+aircrack-ng [handshake-capture-file]-w [wordlist] 
+```
+---
+#### Creating Wordlist
+crunch [min] [max] [character] -t [pattern] -o [filename]
