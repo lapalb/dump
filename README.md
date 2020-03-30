@@ -20,6 +20,8 @@ iwconfig [interface-name] mode monitor : Changes wireless mode from managed to m
 ifconfig [interface-name] hw ether [Your_Desired_MAC_Adress]
 ```
 
+## Network Hacking 
+
 ### airodump-ng : Used by wireless interface in monitor mode to capture packet
 ```
 airodump-ng [interface-name] : Sniffs all the wireless network around with their protection level(Open/WEP/WPA/WPA2) and other critical info
@@ -87,13 +89,16 @@ echo 1 > /proc/sys/ipv4/ip_forward
 BetterCap: better than arpspoof.
 
 
+## Gaining Access
+
+
 ## Post Exploitation
 The things which can be done after gaining access to target system.
 > keyloggers, opening webcam, using it as pivot
 
 ## Website Hacking 
 
-### XSS
+ ### XSS
 Persistent XSS : Stored in DB
 Reflected XSS : Run on a specific URL
 DOM based XSS : 
