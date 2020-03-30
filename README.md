@@ -72,3 +72,27 @@ netdiscover -r [range-of-ip] : IPs and Vendor of devices connected to the same n
 
 Nmap: Gives information about open port, operating system and running services.
 Zenmap: GUI warpper over Nmap
+
+
+### MITM Attack
+Multiple ways to attain this. One way is ARP spoofing.
+
+arpspoof -i [interface-name] -t [target_ip] [gateway_ip]
+arpspoof -i [interface-name] -t [gateway_ip] [target_ip]
+
+After these two commands, arp is spoofed but still we has to force out computer to work as router
+echo 1 > /proc/sys/ipv4/ip_forward
+
+
+BetterCap: better than arpspoof.
+
+
+### XSS
+Persistent XSS : Stored in DB
+Reflected XSS : Run on a specific URL
+DOM based XSS : 
+
+**Beef** : Used for XSS attack
+
+### ZAP : Zed attach proxy
+Automatically find vulnerabilities in web application.
