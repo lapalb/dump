@@ -44,7 +44,7 @@ aireplay-ng --arpreplay  -b [mac-of-AP] -h [mac-of wireless-adapter] [interface-
 
 ### Cracking WPA/WPA2
 Only difference in encrption used for message integrity
-WPA: DKIP
+WPA: TKIP
 WPA2: CCMP
 
 WPS: Can be exploited. It was designed to simplify connecting to wireless. Only way to prevent against this is enabling PBC(Push button connect)
@@ -62,3 +62,13 @@ aircrack-ng [handshake-capture-file]-w [wordlist]
 ---
 #### Creating Wordlist
 crunch [min] [max] [character] -t [pattern] -o [filename]
+
+
+---
+### NetDiscover and Nmap
+```
+netdiscover -r [range-of-ip] : IPs and Vendor of devices connected to the same network
+```
+
+Nmap: Gives information about open port, operating system and running services.
+Zenmap: GUI warpper over Nmap
