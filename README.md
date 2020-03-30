@@ -87,6 +87,12 @@ echo 1 > /proc/sys/ipv4/ip_forward
 BetterCap: better than arpspoof.
 
 
+## Post Exploitation
+The things which can be done after gaining access to target system.
+> keyloggers, opening webcam, using it as pivot
+
+## Website Hacking 
+
 ### XSS
 Persistent XSS : Stored in DB
 Reflected XSS : Run on a specific URL
