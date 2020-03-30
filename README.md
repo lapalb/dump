@@ -96,3 +96,16 @@ DOM based XSS :
 
 ### ZAP : Zed attach proxy
 Automatically find vulnerabilities in web application.
+
+### Information Gathering
+```
+knock : Find subdomain of target
+drib [url] [wordlist] : Web Content server tool to  collect infomration about files on server
+
+ip: [ip] : to get list of all websites on server.
+```
+#### Best website for info-gathering: 
+
+1. [https://www.robtex.com/](https://www.robtex.com/) 
+1. [http://whois.domaintools.com/](http://whois.domaintools.com/)
+1. [https://sitereport.netcraft.com/](https://sitereport.netcraft.com/)
